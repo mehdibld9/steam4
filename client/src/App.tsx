@@ -1,10 +1,11 @@
-import { Switch, Route } from "wouter";
+import { Switch, Route, Link } from "wouter";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { AuthProvider } from "@/hooks/use-auth";
 import { Header } from "@/components/Header";
+import ScrollToTop from "@/components/ScrollToTop";
 import Home from "@/pages/Home";
 import ToolDetail from "@/pages/ToolDetail";
 import Admin from "@/pages/Admin";
@@ -17,7 +18,8 @@ import NotFound from "@/pages/not-found";
 function Router() {
   return (
     <>
-      <Header />
+  <ScrollToTop />
+  <Header />
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/tool/:slug" component={ToolDetail} />
@@ -28,7 +30,7 @@ function Router() {
         <Route path="/terms" component={Terms} />
         <Route component={NotFound} />
       </Switch>
-      <footer className="border-t border-border bg-black">
+  <footer className="border-t border-border bg-sidebar">
         <div className="container mx-auto max-w-7xl px-4 py-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
@@ -41,19 +43,19 @@ function Router() {
               <h3 className="font-semibold mb-3">Links</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>
-                  <a href="/" className="hover:text-foreground transition-colors" data-testid="link-footer-home">
+                  <Link href="/" className="hover:text-foreground transition-colors" data-testid="link-footer-home">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/privacy" className="hover:text-foreground transition-colors" data-testid="link-footer-privacy">
+                  <Link href="/privacy" className="hover:text-foreground transition-colors" data-testid="link-footer-privacy">
                     Privacy Policy
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/terms" className="hover:text-foreground transition-colors" data-testid="link-footer-terms">
+                  <Link href="/terms" className="hover:text-foreground transition-colors" data-testid="link-footer-terms">
                     Terms of Service
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

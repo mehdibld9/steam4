@@ -54,7 +54,7 @@ export default function Home() {
           <p className="text-xl text-muted-foreground mb-2">
             A collection of community tools for gamers
           </p>
-          <p className="text-muted-foreground mb-8">
+          <p className="text-black mb-8">
             Discover powerful tools to enhance your gaming experience
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
@@ -74,9 +74,9 @@ export default function Home() {
               className="gap-2"
               asChild
             >
-              <a href="#community" data-testid="button-community">
+              <Link href="/register" data-testid="button-community">
                 Join Community
-              </a>
+              </Link>
             </Button>
           </div>
         </div>

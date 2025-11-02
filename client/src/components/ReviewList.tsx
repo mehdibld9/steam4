@@ -48,7 +48,7 @@ export function ReviewList({ reviews }: ReviewListProps) {
                       ))}
                     </div>
                     <span className="text-xs text-muted-foreground">
-                      {formatDistanceToNow(new Date(review.createdAt), { addSuffix: true })}
+                      {formatDistanceToNow(new Date(review.created_at), { addSuffix: true })}
                     </span>
                   </div>
                 </div>

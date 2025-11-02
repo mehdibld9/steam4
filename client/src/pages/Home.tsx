@@ -148,7 +148,7 @@ export default function Home() {
                     )}
                     <CardContent className="pt-4">
                       <h3 className="text-xl font-semibold mb-2">{tool.title}</h3>
-                      <p className="text-sm text-muted-foreground mb-3 line-clamp-2">
+                      <p className="text-sm text-black mb-3 line-clamp-2">
                         {tool.short_description}
                       </p>
                       <div className="flex flex-wrap gap-2 mb-3">

@@ -179,7 +179,7 @@ export default function ToolDetail() {
                     <CardTitle className="text-3xl mb-2 break-words" data-testid="text-tool-title">
                       {tool.title}
                     </CardTitle>
-                    <p className="text-muted-foreground break-words" data-testid="text-short-description">{tool.short_description}</p>
+                    <p className="text-black break-words" data-testid="text-short-description">{tool.short_description}</p>
                   </div>
                   <Badge variant="outline" className="whitespace-nowrap" data-testid="badge-version">v{tool.version}</Badge>
                 </div>
@@ -195,8 +195,8 @@ export default function ToolDetail() {
                 
                 <Separator />
                 
-                <div 
-                  className="prose prose-invert max-w-none break-words"
+                <div
+                  className="prose max-w-none break-words text-black"
                   dangerouslySetInnerHTML={{ __html: tool.full_description }}
                   data-testid="text-full-description"
                 />

@@ -1,14 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Steam Family favicon">
+  <!-- Background: transparent so it adapts to different browser UI, with a white disc like the attached image -->
   <rect width="100%" height="100%" fill="transparent"/>
-  <!-- white circle background -->
-  <circle cx="64" cy="64" r="60" fill="#ffffff" />
-  <!-- steam logo approximation in black -->
-  <!-- large ring -->
-  <circle cx="92" cy="36" r="10" fill="#000000" />
-  <!-- small ring -->
-  <circle cx="43" cy="76" r="7" fill="#000000" />
-  <!-- connecting bar -->
-  <path d="M53 68 L80 44 Q86 40 92 40 L94 40 L92 36 L90 34 L86 36 L60 60" fill="#000000" />
-  <!-- connector circle overlapping -->
-  <circle cx="74" cy="54" r="8" fill="#000000" />
+  <circle cx="64" cy="64" r="58" fill="#ffffff" stroke="#e6e6e6" stroke-width="2" />
+
+  <!-- Steam-like simplified glyph centered on the white disc. Drawn with scalable shapes so it looks crisp as an SVG favicon. -->
+  <!-- Large connecting arm circle -->
+  <circle cx="86" cy="38" r="11" fill="#000000" />
+  <!-- Small connection circle near bottom-left -->
+  <circle cx="42" cy="76" r="7" fill="#000000" />
+  <!-- Middle connector circle -->
+  <circle cx="72" cy="54" r="9" fill="#000000" />
+
+  <!-- Connecting arm path (smooth curved arm) -->
+  <path d="M52 68 C58 64, 66 58, 72 54 C78 51, 84 46, 88 44" stroke="#000000" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+  <!-- small highlights to match style (subtle) -->
+  <circle cx="86" cy="38" r="4" fill="#ffffff" opacity="0.02" />
 </svg>

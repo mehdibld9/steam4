@@ -18,12 +18,12 @@ export default function Privacy() {
           <CardHeader>
             <CardTitle className="text-3xl text-black">Privacy Policy</CardTitle>
           </CardHeader>
-          <CardContent className="prose max-w-none space-y-6 text-black">
+          <CardContent className="max-w-none space-y-6 text-black">
             <p className="text-muted-foreground">Last updated: {new Date().toLocaleDateString()}</p>
 
             <section>
               <h2 className="text-2xl font-semibold mb-3 text-black">Introduction</h2>
-              <p className="leading-relaxed">
+              <p className="leading-relaxed text-black">
                 Welcome to SteamFamily. We respect your privacy and are committed to protecting your personal data. 
                 This privacy policy explains how we collect, use, and safeguard your information when you use our platform.
               </p>
@@ -31,10 +31,10 @@ export default function Privacy() {
 
             <section>
               <h2 className="text-2xl font-semibold mb-3 text-black">Information We Collect</h2>
-              <p className="leading-relaxed mb-3">
+              <p className="leading-relaxed mb-3 text-black">
                 We collect the following types of information:
               </p>
-              <ul className="list-disc pl-6 space-y-2">
+              <ul className="list-disc pl-6 space-y-2 text-black">
                 <li>Account information (email, display name)</li>
                 <li>Reviews and ratings you submit</li>
                 <li>Download activity and usage statistics</li>
@@ -44,10 +44,10 @@ export default function Privacy() {
 
             <section>
               <h2 className="text-2xl font-semibold mb-3 text-black">How We Use Your Information</h2>
-              <p className="leading-relaxed mb-3">
+              <p className="leading-relaxed mb-3 text-black">
                 We use your information to:
               </p>
-              <ul className="list-disc pl-6 space-y-2">
+              <ul className="list-disc pl-6 space-y-2 text-black">
                 <li>Provide and maintain our services</li>
                 <li>Process your reviews and display them publicly</li>
                 <li>Track download statistics</li>
@@ -58,7 +58,7 @@ export default function Privacy() {
 
             <section>
               <h2 className="text-2xl font-semibold mb-3 text-black">Data Sharing</h2>
-              <p className="leading-relaxed">
+              <p className="leading-relaxed text-black">
                 We do not sell your personal data to third parties. Your reviews and display name are publicly visible. 
                 We may share anonymized usage statistics for analytics purposes.
               </p>
@@ -66,7 +66,7 @@ export default function Privacy() {
 
             <section>
               <h2 className="text-2xl font-semibold mb-3 text-black">Your Rights</h2>
-              <p className="leading-relaxed">
+              <p className="leading-relaxed text-black">
                 You have the right to access, update, or delete your personal information. You can manage your account 
                 settings or contact us for assistance with data requests.
               </p>
@@ -74,7 +74,7 @@ export default function Privacy() {
 
             <section>
               <h2 className="text-2xl font-semibold mb-3 text-black">Contact Us</h2>
-              <p className="leading-relaxed">
+              <p className="leading-relaxed text-black">
                 If you have questions about this privacy policy, please contact us through our community channels.
               </p>
             </section>

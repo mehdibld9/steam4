@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <rect width="100%" height="100%" fill="transparent"/>
+  <!-- white circle background -->
+  <circle cx="64" cy="64" r="60" fill="#ffffff" />
+  <!-- steam logo approximation in black -->
+  <!-- large ring -->
+  <circle cx="92" cy="36" r="10" fill="#000000" />
+  <!-- small ring -->
+  <circle cx="43" cy="76" r="7" fill="#000000" />
+  <!-- connecting bar -->
+  <path d="M53 68 L80 44 Q86 40 92 40 L94 40 L92 36 L90 34 L86 36 L60 60" fill="#000000" />
+  <!-- connector circle overlapping -->
+  <circle cx="74" cy="54" r="8" fill="#000000" />
+</svg>

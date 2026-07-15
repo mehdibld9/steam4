@@ -1,0 +1,1 @@
+- [Vite envDir when root is a subdirectory](vite-envdir-subroot.md) — root set to a subfolder stops .env at project root from loading unless envDir is set

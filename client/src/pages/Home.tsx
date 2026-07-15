@@ -82,47 +82,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Choose SteamFamily Section */}
-      <section className="py-16 px-4 border-b border-border">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl font-semibold text-center mb-12">
-            Why Choose <span className="text-primary">SteamFamily</span>?
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              {
-                icon: '🛡️',
-                title: 'Community Trusted',
-                description: 'Tools vetted and reviewed by gamers',
-              },
-              {
-                icon: '⚡',
-                title: 'Easy Access',
-                description: 'Quick downloads with direct links to tool providers',
-              },
-              {
-                icon: '⭐',
-                title: 'User Reviews',
-                description: 'Real feedback from gamers like you',
-              },
-              {
-                icon: '👥',
-                title: 'Active Community',
-                description: 'Join discussions and share experiences',
-              },
-            ].map((feature, idx) => (
-              <Card key={idx} className="hover-elevate transition-all">
-                <CardContent className="pt-6 text-center">
-                  <div className="text-4xl mb-3">{feature.icon}</div>
-                  <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
-                  <p className="text-sm text-muted-foreground">{feature.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Tools Grid Section */}
       <section id="tools" className="py-16 px-4">
         <div className="container mx-auto max-w-7xl">
